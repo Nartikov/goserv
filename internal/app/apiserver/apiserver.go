@@ -6,9 +6,9 @@ type APIserver struct{
 }
 
 // New ...
-func New() *APIserver {
+func New(config *Config) *APIserver {
 	return &APIserver{
-		config:config,
+		config: config,
 	}		
 }
 
